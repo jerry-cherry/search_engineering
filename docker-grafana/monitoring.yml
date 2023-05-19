@@ -85,8 +85,8 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock:rw
     ports:
       - 8080:8080
-    networks:
-      - opensearch-net
+#    networks:
+#      - opensearch-net
     restart: unless-stopped
     deploy:
       mode: global
